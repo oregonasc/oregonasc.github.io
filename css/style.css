@@ -7,6 +7,7 @@ body, html {
 	font-weight:400;
 	line-height:1.8em;
 	color:#666;
+	scroll-behavior: smooth;
 }
 
 .pimg1, .pimg2, .pimg3{
@@ -25,7 +26,7 @@ body, html {
 
 .pimg1{
 	background-image:url('../img/oaschouse1.jpg');
-	min-height:200%;
+	min-height:100%;
 }	
 .pimg2{
 	background-image:url('../img/oaschouse2.jpg');
@@ -60,14 +61,50 @@ body, html {
 	letter-spacing:8px;
 	text_transform:uppercase;
 }
-.ptext .border{
+/*.ptext .border{
 	background-color:#111;
 	color:#fff;
 	padding:20px;
+
+}
+*/
+.ptext .stroke{
+	-moz-text-fill-color: white;
+	-webkit-text-fill-color: white;
+	-moz-text-stroke-color: #111;
+	-webkit-text-stroke-color: #111;
+	-moz-text-stroke-width: 2px;  
+	-webkit-text-stroke-width: 2px;
 }
 .ptext .border.trans{
 	background-color:transparent;
+	-moz-text-fill-color: white;
+	-webkit-text-fill-color: white;
+	-moz-text-stroke-color: #111;
+	-webkit-text-stroke-color: #111;
+	-moz-text-stroke-width: 2px;  
+	-webkit-text-stroke-width: 2px;
+
 }
+.floating-menu {
+    font-family: "Lato", sans-serif;
+    background: #282e34;
+    padding: 5px;;
+    width: 230px;
+    z-index: 100;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+	font-weight: bolder;
+  }
+
+  .floating-menu a, 
+  .floating-menu h3 {
+    font-size: 12;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+  }
 @media(max-width:900px){
 	.pimg1, .pimg2, .pimg3{
 		/* background-attachment:scroll; */

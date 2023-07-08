@@ -1,0 +1,128 @@
+/* CSS Document */
+body, html {
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666;
+	scroll-behavior: smooth;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position:relative;
+	opacity:0.70;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+	/*
+	fixed = parallax
+	scroll = normal
+	*/
+	background-attachment:fixed;
+}
+
+.pimg1{
+	background-image:url('../img/oaschouse1.jpg');
+	min-height:100%;
+}	
+.pimg2{
+	background-image:url('../img/oaschouse2.jpg');
+	min-height:400px;
+}
+.pimg3{
+	background-image:url('../img/oaschouse3.jpg');
+	min-height:400px;
+}
+
+.section{
+	text-align:center;
+	padding:50px 80px;
+}
+.section-light{
+	background-color:#f4f4f4;
+	color:#666;
+}
+.section-dark{
+	background-color:#282e34;
+	color:#ddd
+}
+.ptext{
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-size:40px;
+	font-weight: 800;
+	font-style:italic;
+	letter-spacing:8px;
+	text_transform:uppercase;
+}
+/*.ptext .border{
+	background-color:#111;
+	color:#fff;
+	padding:20px;
+
+}
+*/
+.ptext .stroke{
+	-moz-text-fill-color: white;
+	-webkit-text-fill-color: white;
+	-moz-text-stroke-color: #111;
+	-webkit-text-stroke-color: #111;
+	-moz-text-stroke-width: 2px;  
+	-webkit-text-stroke-width: 2px;
+}
+.ptext .border.trans{
+	background-color:transparent;
+	-moz-text-fill-color: white;
+	-webkit-text-fill-color: white;
+	-moz-text-stroke-color: #111;
+	-webkit-text-stroke-color: #111;
+	-moz-text-stroke-width: 2px;  
+	-webkit-text-stroke-width: 2px;
+
+}
+.floating-menu {
+    font-family: "Lato", sans-serif;
+    background: #282e34;
+    padding: 5px;
+    width: 230px;
+    z-index: 100;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+	font-weight: bolder;
+  }
+
+  .floating-menu a, 
+  .floating-menu h3 {
+    font-size: 12;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+  }
+@media(max-width:900px){
+	.pimg1, .pimg2, .pimg3{
+		/* background-attachment:scroll; */
+		line-height: 1.5;
+	}
+.floating-menu {
+    font-family: "Lato", sans-serif;
+    background: #282e34;
+    padding: 0px;
+    width: 150px;
+    z-index: 100;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+	font-weight: bold;
+	}
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; color: yellow; }
+a:active { text-decoration: none; }

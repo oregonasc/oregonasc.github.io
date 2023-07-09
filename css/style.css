@@ -135,11 +135,11 @@ body, html {
 		}
 	.ptext{
 	position:absolute;
-	top:25%;
+	top:0%;
 	width:100%;
 	text-align:center;
 	color:#FFF;
-	font-size:40px;
+	font-size:25px;
 	font-weight: 800;
 	font-style:italic;
 	letter-spacing:8px;

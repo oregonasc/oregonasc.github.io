@@ -133,7 +133,20 @@ body, html {
 	-moz-text-stroke-width: 1px;  
 	-webkit-text-stroke-width: 1px;
 		}
+	.ptext{
+	position:absolute;
+	top:25%;
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-size:40px;
+	font-weight: 800;
+	font-style:italic;
+	letter-spacing:8px;
+	text_transform:uppercase;
+}
 	}
+
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; color: yellow; }
